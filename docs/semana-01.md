@@ -42,7 +42,7 @@ sequenceDiagram
 
 - **URL Testada: (Passo 1)** curl -v http://httpbin.org/get?curso=Engenharia da Computacao
 - **URL Testada: (Passo 2)** curl -v https://httpbin.org/get?curso=Engenharia%20da%20Computa%C3%A7%C3%A3o
-- **O erro no Passo 1:** No meu terminal não foi retornado um dado, mas o terminal identificou os espaços reais como separadores, então foi retornado o curso de Engenharia.
+- **O erro no Passo 1:** No meu terminal não foi retornado um erro, mas acredito que tenha sido porque o terminal identificou os espaços reais como separadores, então foi retornado o curso de Engenharia.
 - **A função do `%20`:** A internet foi projetada originalmente para entender apenas o alfabeto inglês padrão e alguns símbolos básicos, nesse caso existem esses códigos para substituir certos caracteres para que navegadores e servidores consigam reconhecer de forma estável e segura.
 
 ### Experimento 4: Negociação de Conteúdo & User-Agent
