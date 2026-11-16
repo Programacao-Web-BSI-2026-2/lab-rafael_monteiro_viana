@@ -1,4 +1,4 @@
-[Voltar ao Início](../index.html)
+[Voltar ao Início](https://programacao-web-bsi-2026-2.github.io/lab-rafael_monteiro_viana/)
 # Memória de Desenvolvimento — Semana 01: Protocolo HTTP & Sockets Bare-Metal
 
 **Aluno:** Rafael Monteiro Viana  
