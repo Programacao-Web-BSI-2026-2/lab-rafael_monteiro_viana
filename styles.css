@@ -88,3 +88,19 @@ li > ol {
     color: #ebe9e9;
     padding: 2rem 0 2rem 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .pagina {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas: 
+            "header"
+            "aside"
+            "main"
+            "footer";
+    }
+
+    .conteudo {
+        padding: 2rem;
+    }
+}
