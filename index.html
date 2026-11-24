@@ -5,29 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Rafael Viana" />
         <title>Portfólio de Programação Web</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
+      <div class="pagina">
+        <header class="cabecalho">
             <h1>Meu Portfólio de Programação Web</h1>
             <p>Repositório de atividades práticas e documentação da disciplina.</p>
         </header>
-        <main>
-            <h2>Menu Principal</h2>
-            <nav>
+        <main class="conteudo">
+            <h2>Bem vindo ao Portfólio</h2>
+            <p>Este espaço reúne as entregas práticas realizadas ao longo da disciplina. Utilize o menu lateral para navegar entre os <br> registros de sala de aula, os laboratórios organizados por módulo e a página de referências</p>
+        </main>
+        <aside class="barra-lateral">
+          <nav class="navegacao">
                 <ul>
                     <li><strong>Início (Você está aqui)</strong></li>
                     <li><a href="./referencias.html">Material de Referência HTML</a></li>
-                    <li>
+                    <li class="modulo">
                         Registros de Sala de Aula (Markdown):
                         <ul>
                             <li><a href="./docs/semana-01">Registro da Prática 01</a></li>
                             <li><a href="#">Guia de Comandos Git</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="modulo">
                         Trilhas de Laboratório:
                         <ol>
-                            <li>
+                            <li class="modulo">
                                 Módulo 1: Estrutura (HTML)
                                 <ul>
                                     <li><a href="./labs/01/index.html">Lab 01 - Hello World e Tags Básicas</a></li>
@@ -35,7 +40,7 @@
                                     <li><a href="./labs/03/index.html">Lab 03 - Estruturação de Tabelas</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="modulo">
                                 Módulo 2: Estilização (CSS)
                                 <ul>
                                     <li><a href="./labs/04/index.html">Lab 04 - Introdução ao CSS</a></li>
@@ -43,7 +48,7 @@
                                     <li><a href="./labs/06/index.html">Lab 06 - Layouts Responsivos</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="modulo">
                                 Módulo 3: Interatividade (Javascript)
                                 <ul>
                                     <li><a href="./labs/07/index.html">Lab 07 - Manipulação do DOM</a></li>
@@ -55,14 +60,16 @@
                     </li>
                 </ul>
             </nav>
-        </main>
-        <footer>
-            <hr />
+        </aside>
+        
+        <footer class="rodape">
             <h3>Status do Projeto</h3>
             <p>
                 Este site consolida tanto as implementações práticas (HTML) quanto a documentação técnica (Markdown) elaborada durante as
                 aulas
             </p>
         </footer>
+      </div>
+        
     </body>
 </html>
