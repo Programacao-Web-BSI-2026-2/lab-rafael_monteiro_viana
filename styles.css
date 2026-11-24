@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cor-primaria: #165e02;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.pagina {
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+    "header  header"
+    "aside    main"
+    "footer  footer";
+}
+
+.cabecalho {
+    background: var(--cor-primaria);
+    background: radial-gradient(circle,rgba(22, 94, 2, 1) 0%, rgba(0, 156, 8, 1) 100%);
+    color: #ebe9e9;
+    padding: 2rem 0 2rem 2rem;
+
+    grid-area: header;
+}
+
+.barra-lateral {
+    grid-area: aside;
+    padding: 1rem 1rem 0 0.875rem;
+}
+
+.navegacao {
+    display: flex;
+}
+
+.modulo {
+    margin-bottom: 1rem;
+}
+
+li {
+    display: block;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+a {
+    padding: 0.725rem;
+    display: inline-block;
+    border-radius: 10px;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    color: #000;
+}
+
+a:hover {
+    background-color: #a2ca94;
+    border-left: 3px solid #3d4938;
+}
+
+li > ul,
+li > ol {
+    margin-left: 0.5rem;
+}
+
+.conteudo {
+    grid-area: main;
+    background-color: #ececec;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.rodape {
+    grid-area: footer;
+    
+    background: var(--cor-primaria);
+    background: radial-gradient(circle,rgba(22, 94, 2, 1) 0%, rgba(0, 156, 8, 1) 100%);
+    color: #ebe9e9;
+    padding: 2rem 0 2rem 2rem;
+}
